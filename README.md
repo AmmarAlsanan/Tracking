@@ -13,10 +13,12 @@ in this App i will create the back-end server to :
 ![RRDjDzWYIcxPLFJAPwX5fHA0iUpxi7xk9mgpGNOO (1)](https://user-images.githubusercontent.com/76032846/110782942-cd7ade00-8278-11eb-9481-760bc78855a6.jpeg)
 ![7552965](https://user-images.githubusercontent.com/76032846/110782943-cd7ade00-8278-11eb-9d64-344a0f1836c0.png)
 
-Express => https://expressjs.com/
-MongoDB => https://www.mongodb.com/cloud/atlas
-Mongoose => https://mongoosejs.com/
-JWT => https://jwt.io/
+
+start the Server :
+
+node src/index.js
+
+
 
 
 and i will add an other Reositry for the front-end letter 
