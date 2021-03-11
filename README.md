@@ -26,6 +26,7 @@ in this App i will create the back-end server to :
 start the Server :
 
 node src/index.js
+npm start dev
 
 
 
