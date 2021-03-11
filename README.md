@@ -4,11 +4,10 @@ Application record the user paths , then display it to user
 creared api gateway using API express .
 and there are 4API :
 
-1-post  /signup   for signUp account 
-2-post /signin    for login to user account 
-
-3-post /tracks    for create track and save it MongoDB 
-4-get  /tracks    fro fetching the tracks for user 
+  1-post  /signup   for signUp account 
+  2-post /signin    for login to user account 
+  3-post /tracks    for create track and save it MongoDB 
+  4-get  /tracks    fro fetching the tracks for user 
 
 
 in this App i will create the back-end server to :
