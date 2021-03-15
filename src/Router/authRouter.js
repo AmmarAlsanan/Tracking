@@ -38,7 +38,7 @@ route.post("/signin", async (req, res) => {
   }
 
   //check if we have the user email
-  const user = User.findOne({ email });
+  const user = await User.findOne({ email });
 
   //in the input Email is not on the mongoDB return err message
   if (!user) {
@@ -48,15 +48,15 @@ route.post("/signin", async (req, res) => {
   }
   //user.comperPassword
   //   if there are email comperthe input password with the password in the DB
-  //   try {
+    try {
   await user.comperPassword(password);
 
   // create a  token
   const token = jwt.sign({ userId: user._id }, "My_secret_key");
   res.send({ token });
-  //   } catch (err) {
-  //     return res.status(404).send({ error: err });
-  //   }
+    } catch (err) {
+      return res.status(404).send({ error: err });
+    }
 });
 
 module.exports = route;
